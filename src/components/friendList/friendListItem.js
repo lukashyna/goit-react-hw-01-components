@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './friendListItem.module.css';
+
 const FriendListItem = ({ friend }) => {
   const statusClass = friend.isOnline ? styles.active : styles.disabled;
   return (

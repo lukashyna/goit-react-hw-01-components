@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './social-profile.module.css';
-const SocialProfile = ({ user }) => (
+
+const Profile = ({ user }) => (
   <div className={styles.profile}>
     <div className={styles.description}>
       <img src={user.avatar} alt="user avatar" className={styles.avatar} />
@@ -26,8 +27,10 @@ const SocialProfile = ({ user }) => (
     </ul>
   </div>
 );
-
-SocialProfile.propTypes = {
+Profile.defaultProps = {
+  user: {},
+};
+Profile.propTypes = {
   user: PropTypes.shape({
     name: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
@@ -41,4 +44,4 @@ SocialProfile.propTypes = {
   }),
 };
 
-export default SocialProfile;
+export default Profile;

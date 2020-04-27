@@ -19,27 +19,3 @@
   display: flex;
   justify-content: space-around;
 }
-.item {
-  display: flex;
-  width: 25%;
-  padding: 15px 0;
-  flex-direction: column;
-  background: #0965ce;
-  border: 1px solid white;
-}
-.label {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 300;
-  font-size: 12px;
-  color: white;
-  margin: 0 auto;
-}
-
-.percentage {
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 500;
-  font-size: 14px;
-  color: white;
-  margin: 0 auto;
-  margin-top: 5px;
-}
