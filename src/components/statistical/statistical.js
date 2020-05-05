@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StatisticItem from './statistical-dataItem';
-import styles from './statistical-data.module.css';
+import StatisticItem from './statisticalItem';
+import styles from './statistical.module.css';
 
 const Statistics = ({ title, stats }) => (
   <section className={styles.statistics}>
@@ -13,10 +13,9 @@ const Statistics = ({ title, stats }) => (
     </ul>
   </section>
 );
-Statistics.defaultProps = {
-  title: undefined,
-};
+
 Statistics.propTypes = {
+  /* eslint-disable-next-line */
   title: PropTypes.string,
   stats: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

@@ -14,6 +14,10 @@ FriendList.defaultProps = {
   friends: [],
 };
 FriendList.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.object),
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      id: PropTypes.string.isRequired,
+    }),
+  ),
 };
 export default FriendList;

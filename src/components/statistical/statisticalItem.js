@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './statistical-dataItem.module.css';
+import styles from './statisticalItem.module.css';
 
 const StatisticItem = ({ stat }) => (
   <li key={stat.id} className={styles.item}>
